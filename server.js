@@ -7,7 +7,7 @@ const fs = require('fs');
 // إنشاء تطبيق Express
 const app = express();
 
-const port = 3000; // يمكنك تغيير المنفذ إذا كنت تريد
+const port = 6506; // يمكنك تغيير المنفذ إذا كنت تريد
 
 // تعريف مجلد الملفات الثابتة (static files)
 app.use(express.static(path.join(__dirname)));
@@ -46,3 +46,4 @@ const server = http.createServer((req, res) => {
     }
   });
 });
+
