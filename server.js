@@ -6,8 +6,8 @@ const fs = require('fs');
 
 // إنشاء تطبيق Express
 const app = express();
-const PORT2 = 6465;
-const port = 6184; // يمكنك تغيير المنفذ إذا كنت تريد
+
+const port = 3000; // يمكنك تغيير المنفذ إذا كنت تريد
 
 // تعريف مجلد الملفات الثابتة (static files)
 app.use(express.static(path.join(__dirname)));
@@ -45,9 +45,4 @@ const server = http.createServer((req, res) => {
       res.end(content, 'utf-8');
     }
   });
-});
-
-// تشغيل الخادم على البورت المحدد
-server.listen(PORT2, () => {
-  console.log(`Server is running on http://localhost:${PORT2}`);
 });
